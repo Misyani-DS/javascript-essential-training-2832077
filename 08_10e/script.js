@@ -49,7 +49,7 @@ const tipCalculator = (sum, percentage, locale, currency, printHTML) => {
     total: formatter(locale, currency, total),
   };
 
-  printHTML(finalTip);
+  callback(finalTip);
 };
 
 tipCalculator(29.95, 18, "de-DE", "EUR", printHTML);
